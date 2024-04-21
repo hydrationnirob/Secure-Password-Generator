@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+.card-header {
+  font-size: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.form-check-label {
+  font-weight: 400;
+}
+
+.btn {
+  min-width: 120px;
+}
+
+.result {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.form-group.row {
+  margin-bottom: 20px;
+}
+
+#lengthValue {
+  font-weight: bold;
+  background-color: yellowgreen;
+  width: 50px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+  color: white;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <div class="card">
+      <h5 class="card-header bg-primary text-white">Password Generator</h5>
+      <h6 class="card-subtitle text-muted text-center mt-2"> @Rakibul Haque</h6>
+      <div class="card-body">
+        <div class="form-group row">
+          <label for="length" class="col-sm-3 col-form-label">Password Length:</label>
+          <div class="col-sm-9">
+            <input type="range" class="form-range" id="length" value="12" min="4" max="64">
+            <span id="lengthValue" class="ml-2">12</span>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Include:</label>
+          <div class="col-sm-9">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="abc" checked>
+              <label class="form-check-label" for="abc">abc</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="123" checked>
+              <label class="form-check-label" for="123">123</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="ABC" checked>
+              <label class="form-check-label" for="ABC">ABC</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="symbols" checked>
+              <label class="form-check-label" for="symbols">#$&</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="similarWords" checked>
+              <label class="form-check-label" for="similarWords">Similar Word 0Oo|l1</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="uniqueChars" checked>
+              <label class="form-check-label" for="uniqueChars">All Unique Characters</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="equalProb" checked>
+              <label class="form-check-label" for="equalProb">Equal Character Set Probability</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="moreSymbols" checked>
+              <label class="form-check-label" for="moreSymbols">Use More Symbols %()+-=[]{}|~.,</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="numPasswords" class="col-sm-3 col-form-label">Number of Passwords to Create:</label>
+          <div class="col-sm-9">
+            <input type="number" class="form-control" id="numPasswords" value="1" min="1">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <button id="generate" class="btn btn-primary btn-block mt-3">Generate Password</button>
+          </div>
+        </div>
+        <div class="result mt-3" id="passwords" style="padding: 10px;"></div>
+
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
