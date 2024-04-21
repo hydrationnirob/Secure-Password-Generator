@@ -20,6 +20,15 @@ The Secure Password Generator Chrome Extension is a powerful tool designed to he
 
 You can install the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/YOUR_EXTENSION_ID).
 
+---Otherwise
+
+1. Clone this repository to your local machine.
+2. Open Google Chrome.
+3. Go to `chrome://extensions/`.
+4. Enable "Developer mode" by toggling the switch in the upper-right corner.
+5. Click on "Load unpacked" and select the directory where you cloned the repository.
+
+
 ## Usage
 
 1. Install the extension from the Chrome Web Store.
